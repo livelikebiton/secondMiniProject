@@ -1,0 +1,22 @@
+<div>
+    <h2>ADD New Task </h2>
+
+    <form #taskForm #myForm="ngForm" (submit)="addTask()" >
+
+        <label>Description: </label>
+        <input #descriptionBox="ngModel" type="text" [(ngModel)]="task.description" name="description" required>
+        <span *ngIf="descriptionBox.invalid && descriptionBox.touched">Missing Name.</span>
+
+        <label>Member: </label>
+        <select #memberBox="ngModel" [(ngModel)]="task.memberId" name="member" required>
+            <option selected disabled>Select House Member</option>
+            <option *ngFor="let m of members" value="{{m._id}}">{{m.name}}</option>
+        </select>
+        <span *ngIf="memberBox.invalid && memberBox.touched">Missing Artist Name.</span>
+
+        <br>
+
+        <button> ADD </button>
+    </form>
+
+</div>

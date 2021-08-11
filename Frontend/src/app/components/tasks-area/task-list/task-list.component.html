@@ -1,0 +1,23 @@
+<div>
+    <table *ngIf="tasks?.length">
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>Date</th>
+                <th>member</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let t of tasks">
+                <td>{{t.description}}</td>
+                <td>{{t.taskDate.toString().substring(0, 10) + " " + t.taskDate.toString().substring(11, 16)}}</td>
+                <td>{{t.member.name}}</td>
+                <td>
+                    <input type="image" src="assets/images/delete.png" (click)="deleteTask(t._id)" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

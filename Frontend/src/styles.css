@@ -1,0 +1,21 @@
+html, body {
+    background-color: indianred;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 100%;
+    font-size: large;
+}
+
+a {
+    color: white;
+}
+
+input, button, select, label {
+    font-size: large;
+}
+
+div {
+    border-radius: 20px;
+}

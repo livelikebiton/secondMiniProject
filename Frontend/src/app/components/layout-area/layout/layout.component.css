@@ -1,0 +1,18 @@
+nav {
+    text-align: left;
+    padding-right: 20px;
+    font-size: large;
+}
+
+nav a {
+    margin: 0 10px;
+}
+
+h1 {
+    margin: 5px;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
